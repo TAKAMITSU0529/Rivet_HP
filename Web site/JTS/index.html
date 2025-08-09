@@ -20,7 +20,6 @@
                 <li><a href="#philosophy" class="nav-link">企業理念</a></li>
                 <li><a href="#policy" class="nav-link">経営方針</a></li>
                 <li><a href="#business" class="nav-link">事業内容</a></li>
-                <li><a href="#message" class="nav-link">代表挨拶</a></li>
                 <li><a href="#company" class="nav-link">会社概要</a></li>
                 <li><a href="#history" class="nav-link">会社沿革</a></li>
                 <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
@@ -128,39 +127,11 @@
         </div>
     </section>
 
-    <!-- 代表挨拶 -->
-    <section id="message" class="section message">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">代表挨拶</h2>
-            </div>
-            <div class="message-content">
-                <div class="message-text">
-                    <h3>「技術と信頼で、お客様と共に未来を築く」</h3>
-                    <p>
-                        株式会社JTSは創業以来、製造業界における技術革新の最前線で歩み続けてまいりました。
-                        私たちが大切にしているのは、単なる製品の提供ではなく、お客様の事業成功に真に貢献できるパートナーであることです。
-                    </p>
-                    <p>
-                        急速に変化する市場環境の中で、私たちは常に学び続け、革新し続けることで、
-                        お客様のニーズを先回りした価値を提供してまいります。
-                        これからも技術と信頼を軸に、持続可能な社会の実現に向けて挑戦を続けてまいります。
-                    </p>
-                    <div class="ceo-signature">
-                        <p class="ceo-title">代表取締役社長</p>
-                        <p class="ceo-name">三鬼　克彦</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 会社概要 -->
     <section id="company" class="section company">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
+                <span class="section-number">04</span>
                 <h2 class="section-title">会社概要</h2>
             </div>
             <div class="company-info">
@@ -194,10 +165,6 @@
                         <td>幅幅250m² / ホイスト2.8t / リフト2t</td>
                     </tr>
                     <tr>
-                        <th>主要取引先</th>
-                        <td>自動車部品メーカー、電機メーカー、製造業等</td>
-                    </tr>
-                    <tr>
                         <th>取引銀行</th>
                         <td>名古屋銀行、あいち銀行</td>
                     </tr>
@@ -210,7 +177,7 @@
     <section id="history" class="section history">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06</span>
+                <span class="section-number">05</span>
                 <h2 class="section-title">会社沿革</h2>
             </div>
             <div class="history-content">
@@ -256,6 +223,25 @@
         </div>
     </section>
 
+    <!-- アクセス -->
+    <section id="access" class="section access">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">アクセス</h2>
+            </div>
+            <div class="access-content">
+                <p>〒471-0847 愛知県豊田市千足町九丁目59番1</p>
+                <div class="company-map" style="margin-top: 20px;">
+                    <iframe
+  src="https://www.google.com/maps?q=35.0753084,137.1053727&hl=ja&z=18&output=embed"
+  width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- お問い合わせ -->
     <section id="contact" class="section contact">
         <div class="container">
@@ -275,12 +261,11 @@
                         </div>
                         <div class="contact-item">
                             <h4>メールでのお問い合わせ</h4>
-                            <p class="email"><a href="mailto:taki@kk-jts.co.jp">taki@kk-jts.co.jp</a></p>
-                            <p class="response">24時間以内にご返信いたします</p>
+                            <p class="response">フォームからお問い合わせください。2営業日以内にご返信いたします</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/xldllwda" method="POST">
                     <div class="form-group">
                         <label for="company">会社名</label>
                         <input type="text" id="company" name="company" required>
@@ -301,6 +286,12 @@
                         <label for="message">お問い合わせ内容</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+                    
+                    <!-- Formspree設定用隠しフィールド -->
+                    <input type="hidden" name="_subject" value="JTSホームページからのお問い合わせ">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
                     <button type="submit" class="submit-button">送信する</button>
                 </form>
             </div>
@@ -316,7 +307,7 @@
                 </div>
                 <div class="footer-info">
                     <p>〒471-0847 愛知県豊田市千足町九丁目59番1</p>
-                    <p>TEL: <a href="tel:0565-41-5227">0565-41-5227</a> | EMAIL: <a href="mailto:taki@kk-jts.co.jp">taki@kk-jts.co.jp</a></p>
+                    <p>TEL: <a href="tel:0565-41-5227">0565-41-5227</a> | EMAIL: <a href="mailto:asano@kk-jts.co.jp">asano@kk-jts.co.jp</a></p>
                 </div>
             </div>
             <div class="footer-bottom">

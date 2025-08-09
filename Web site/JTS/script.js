@@ -110,34 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // フォーム送信処理
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // 送信ボタンのローディング状態
-            const submitButton = this.querySelector('.submit-button');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = '送信中...';
-            submitButton.disabled = true;
-            
-            // 実際の送信処理をここに実装
-            // この例では2秒後に完了とする
-            setTimeout(() => {
-                submitButton.textContent = '送信完了';
-                submitButton.style.background = '#28a745';
-                
-                // 3秒後に元に戻す
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                    submitButton.style.background = '';
-                    this.reset(); // フォームをリセット
-                }, 3000);
-            }, 2000);
-        });
-    }
+    // 既存のカスタム送信処理を削除し、ブラウザ標準のフォーム送信を使用します。
 
     // フォーム入力時のリアルタイムバリデーション
     const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
